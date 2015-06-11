@@ -1,3 +1,14 @@
+
+This is essentially libDAI from http://git.tuebingen.mpg.de/libdai.git.
+
+I am experimenting with modifications that I wanted to share with collaborators so I put it
+up on GitHub.  If you want libDAI get it from the link above. 
+
+
+
+
+
+
 libDAI  -  A free/open source C++ library for Discrete Approximate Inference
 
 -------------------------------------------------------------------------------
