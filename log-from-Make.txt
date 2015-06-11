@@ -1,0 +1,1069 @@
+2015-06-11 12:22 /libdai/--% (master) make
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/graph.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/dag.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/bipgraph.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/varset.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/daialg.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/alldai.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/alldai.cpp:11:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/exactinf.h:32:25: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class ExactInf : public DAIAlgFG {
+                        ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from src/alldai.cpp:11:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/hak.h:36:20: note: in instantiation of template class 'dai::DAIAlg<dai::RegionGraph>'
+      requested here
+class HAK : public DAIAlgRG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from src/alldai.cpp:11:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::CobwebGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/glc.h:158:20: note: in instantiation of template class
+      'dai::DAIAlg<dai::CobwebGraph>' requested here
+class GLC : public DAIAlgCG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+3 warnings generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/clustergraph.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/factor.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/factorgraph.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/properties.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/regiongraph.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/cobwebgraph.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/util.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/weightedgraph.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/exceptions.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/exactinf.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/exactinf.cpp:9:
+In file included from include/dai/exactinf.h:17:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/exactinf.h:32:25: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class ExactInf : public DAIAlgFG {
+                        ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/evidence.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/emalg.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/io.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/io.cpp:10:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/exactinf.h:32:25: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class ExactInf : public DAIAlgFG {
+                        ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from src/io.cpp:10:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/hak.h:36:20: note: in instantiation of template class 'dai::DAIAlg<dai::RegionGraph>'
+      requested here
+class HAK : public DAIAlgRG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from src/io.cpp:10:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::CobwebGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/glc.h:158:20: note: in instantiation of template class
+      'dai::DAIAlg<dai::CobwebGraph>' requested here
+class GLC : public DAIAlgCG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+3 warnings generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/bp.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/bp.cpp:18:
+In file included from include/dai/bp.h:23:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/bp.h:63:19: note: in instantiation of template class 'dai::DAIAlg<dai::FactorGraph>'
+      requested here
+class BP : public DAIAlgFG {
+                  ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/fbp.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/fbp.cpp:13:
+In file included from include/dai/fbp.h:22:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/bp.h:63:19: note: in instantiation of template class 'dai::DAIAlg<dai::FactorGraph>'
+      requested here
+class BP : public DAIAlgFG {
+                  ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/trwbp.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/trwbp.cpp:13:
+In file included from include/dai/trwbp.h:22:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/bp.h:63:19: note: in instantiation of template class 'dai::DAIAlg<dai::FactorGraph>'
+      requested here
+class BP : public DAIAlgFG {
+                  ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/mf.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/mf.cpp:17:
+In file included from include/dai/mf.h:23:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/mf.h:41:19: note: in instantiation of template class 'dai::DAIAlg<dai::FactorGraph>'
+      requested here
+class MF : public DAIAlgFG {
+                  ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/hak.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/hak.cpp:14:
+In file included from include/dai/hak.h:26:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/hak.h:36:20: note: in instantiation of template class 'dai::DAIAlg<dai::RegionGraph>'
+      requested here
+class HAK : public DAIAlgRG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/lc.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/lc.cpp:17:
+In file included from include/dai/lc.h:22:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/lc.h:33:19: note: in instantiation of template class 'dai::DAIAlg<dai::FactorGraph>'
+      requested here
+class LC : public DAIAlgFG {
+                  ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from src/lc.cpp:17:
+In file included from include/dai/lc.h:22:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/hak.h:36:20: note: in instantiation of template class 'dai::DAIAlg<dai::RegionGraph>'
+      requested here
+class HAK : public DAIAlgRG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from src/lc.cpp:17:
+In file included from include/dai/lc.h:22:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::CobwebGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/glc.h:158:20: note: in instantiation of template class
+      'dai::DAIAlg<dai::CobwebGraph>' requested here
+class GLC : public DAIAlgCG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+3 warnings generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/treeep.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/treeep.cpp:16:
+In file included from include/dai/jtree.h:23:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/jtree.h:45:22: note: in instantiation of template class
+      'dai::DAIAlg<dai::RegionGraph>' requested here
+class JTree : public DAIAlgRG {
+                     ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/jtree.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/jtree.cpp:15:
+In file included from include/dai/jtree.h:23:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/jtree.h:45:22: note: in instantiation of template class
+      'dai::DAIAlg<dai::RegionGraph>' requested here
+class JTree : public DAIAlgRG {
+                     ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/mr.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/mr.cpp:17:
+In file included from include/dai/mr.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/mr.h:38:19: note: in instantiation of template class 'dai::DAIAlg<dai::FactorGraph>'
+      requested here
+class MR : public DAIAlgFG {
+                  ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from src/mr.cpp:17:
+In file included from include/dai/mr.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/jtree.h:45:22: note: in instantiation of template class
+      'dai::DAIAlg<dai::RegionGraph>' requested here
+class JTree : public DAIAlgRG {
+                     ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+2 warnings generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/gibbs.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/gibbs.cpp:18:
+In file included from include/dai/gibbs.h:21:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/gibbs.h:32:22: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class Gibbs : public DAIAlgFG {
+                     ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/bbp.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/bbp.cpp:13:
+In file included from include/dai/bp.h:23:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/bp.h:63:19: note: in instantiation of template class 'dai::DAIAlg<dai::FactorGraph>'
+      requested here
+class BP : public DAIAlgFG {
+                  ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/cbp.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/cbp.cpp:21:
+In file included from include/dai/gibbs.h:21:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/gibbs.h:32:22: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class Gibbs : public DAIAlgFG {
+                     ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/bp_dual.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/decmap.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/decmap.cpp:13:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/exactinf.h:32:25: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class ExactInf : public DAIAlgFG {
+                        ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from src/decmap.cpp:13:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/hak.h:36:20: note: in instantiation of template class 'dai::DAIAlg<dai::RegionGraph>'
+      requested here
+class HAK : public DAIAlgRG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from src/decmap.cpp:13:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::CobwebGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/glc.h:158:20: note: in instantiation of template class
+      'dai::DAIAlg<dai::CobwebGraph>' requested here
+class GLC : public DAIAlgCG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+3 warnings generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -c src/glc.cpp
+clang: warning: argument unused during compilation: '-Llib'
+clang: warning: argument unused during compilation: '-L/opt/local/lib'
+In file included from src/glc.cpp:17:
+In file included from include/dai/glc.h:26:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/glc.h:66:28: note: in instantiation of template class 'dai::DAIAlg<dai::FactorGraph>'
+      requested here
+        virtual ~Cobweb(){ delete cav; }
+                           ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from src/glc.cpp:17:
+In file included from include/dai/glc.h:26:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::CobwebGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/glc.h:158:20: note: in instantiation of template class
+      'dai::DAIAlg<dai::CobwebGraph>' requested here
+class GLC : public DAIAlgCG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from src/glc.cpp:17:
+In file included from include/dai/glc.h:26:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/hak.h:36:20: note: in instantiation of template class 'dai::DAIAlg<dai::RegionGraph>'
+      requested here
+class HAK : public DAIAlgRG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+3 warnings generated.
+mkdir -p lib
+ar rcus lib/libdai.a graph.o dag.o bipgraph.o varset.o daialg.o alldai.o clustergraph.o factor.o factorgraph.o properties.o regiongraph.o cobwebgraph.o util.o weightedgraph.o exceptions.o exactinf.o evidence.o emalg.o io.o bp.o fbp.o trwbp.o mf.o hak.o lc.o treeep.o jtree.o mr.o gibbs.o bbp.o cbp.o bp_dual.o decmap.o glc.o
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -o tests/testdai tests/testdai.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_program_options
+In file included from tests/testdai.cpp:18:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/exactinf.h:32:25: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class ExactInf : public DAIAlgFG {
+                        ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from tests/testdai.cpp:18:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/hak.h:36:20: note: in instantiation of template class 'dai::DAIAlg<dai::RegionGraph>'
+      requested here
+class HAK : public DAIAlgRG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from tests/testdai.cpp:18:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::CobwebGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/glc.h:158:20: note: in instantiation of template class
+      'dai::DAIAlg<dai::CobwebGraph>' requested here
+class GLC : public DAIAlgCG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+3 warnings generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -o tests/testem/testem tests/testem/testem.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_program_options
+In file included from tests/testem/testem.cpp:14:
+In file included from include/dai/evidence.h:18:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/exactinf.h:32:25: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class ExactInf : public DAIAlgFG {
+                        ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from tests/testem/testem.cpp:14:
+In file included from include/dai/evidence.h:18:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/hak.h:36:20: note: in instantiation of template class 'dai::DAIAlg<dai::RegionGraph>'
+      requested here
+class HAK : public DAIAlgRG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from tests/testem/testem.cpp:14:
+In file included from include/dai/evidence.h:18:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::CobwebGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/glc.h:158:20: note: in instantiation of template class
+      'dai::DAIAlg<dai::CobwebGraph>' requested here
+class GLC : public DAIAlgCG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+3 warnings generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -o tests/testbbp tests/testbbp.cpp -ldai -lgmpxx -lgmp -arch x86_64
+In file included from tests/testbbp.cpp:10:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/exactinf.h:32:25: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class ExactInf : public DAIAlgFG {
+                        ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from tests/testbbp.cpp:10:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/hak.h:36:20: note: in instantiation of template class 'dai::DAIAlg<dai::RegionGraph>'
+      requested here
+class HAK : public DAIAlgRG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from tests/testbbp.cpp:10:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::CobwebGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/glc.h:158:20: note: in instantiation of template class
+      'dai::DAIAlg<dai::CobwebGraph>' requested here
+class GLC : public DAIAlgCG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+3 warnings generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -o utils/createfg utils/createfg.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_program_options
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -o utils/fg2dot utils/fg2dot.cpp -ldai -lgmpxx -lgmp -arch x86_64
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -o utils/fginfo utils/fginfo.cpp -ldai -lgmpxx -lgmp -arch x86_64
+In file included from utils/fginfo.cpp:12:
+In file included from include/dai/jtree.h:23:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/jtree.h:45:22: note: in instantiation of template class
+      'dai::DAIAlg<dai::RegionGraph>' requested here
+class JTree : public DAIAlgRG {
+                     ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -o utils/uai2fg utils/uai2fg.cpp -ldai -lgmpxx -lgmp -arch x86_64
+In file included from utils/uai2fg.cpp:12:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/exactinf.h:32:25: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class ExactInf : public DAIAlgFG {
+                        ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from utils/uai2fg.cpp:12:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/hak.h:36:20: note: in instantiation of template class 'dai::DAIAlg<dai::RegionGraph>'
+      requested here
+class HAK : public DAIAlgRG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from utils/uai2fg.cpp:12:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::CobwebGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/glc.h:158:20: note: in instantiation of template class
+      'dai::DAIAlg<dai::CobwebGraph>' requested here
+class GLC : public DAIAlgCG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+3 warnings generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -o examples/example examples/example.cpp -ldai -lgmpxx -lgmp -arch x86_64
+In file included from examples/example.cpp:11:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/exactinf.h:32:25: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class ExactInf : public DAIAlgFG {
+                        ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from examples/example.cpp:11:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/hak.h:36:20: note: in instantiation of template class 'dai::DAIAlg<dai::RegionGraph>'
+      requested here
+class HAK : public DAIAlgRG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from examples/example.cpp:11:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::CobwebGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/glc.h:158:20: note: in instantiation of template class
+      'dai::DAIAlg<dai::CobwebGraph>' requested here
+class GLC : public DAIAlgCG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+3 warnings generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -o examples/example_bipgraph examples/example_bipgraph.cpp -ldai -lgmpxx -lgmp -arch x86_64
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -o examples/example_varset examples/example_varset.cpp -ldai -lgmpxx -lgmp -arch x86_64
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -o examples/example_permute examples/example_permute.cpp -ldai -lgmpxx -lgmp -arch x86_64
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -o examples/example_sprinkler examples/example_sprinkler.cpp -ldai -lgmpxx -lgmp -arch x86_64
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -o examples/example_sprinkler_em examples/example_sprinkler_em.cpp -ldai -lgmpxx -lgmp -arch x86_64
+In file included from examples/example_sprinkler_em.cpp:8:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/exactinf.h:32:25: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class ExactInf : public DAIAlgFG {
+                        ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from examples/example_sprinkler_em.cpp:8:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/hak.h:36:20: note: in instantiation of template class 'dai::DAIAlg<dai::RegionGraph>'
+      requested here
+class HAK : public DAIAlgRG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from examples/example_sprinkler_em.cpp:8:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::CobwebGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/glc.h:158:20: note: in instantiation of template class
+      'dai::DAIAlg<dai::CobwebGraph>' requested here
+class GLC : public DAIAlgCG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+3 warnings generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -o examples/example_sprinkler_gibbs examples/example_sprinkler_gibbs.cpp -ldai -lgmpxx -lgmp -arch x86_64
+In file included from examples/example_sprinkler_gibbs.cpp:10:
+In file included from include/dai/gibbs.h:21:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/gibbs.h:32:22: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class Gibbs : public DAIAlgFG {
+                     ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/var_test tests/unit/var_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/smallset_test tests/unit/smallset_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/varset_test tests/unit/varset_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/graph_test tests/unit/graph_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/dag_test tests/unit/dag_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/bipgraph_test tests/unit/bipgraph_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/weightedgraph_test tests/unit/weightedgraph_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/enum_test tests/unit/enum_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/util_test tests/unit/util_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/exceptions_test tests/unit/exceptions_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/properties_test tests/unit/properties_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/index_test tests/unit/index_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/prob_test tests/unit/prob_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/factor_test tests/unit/factor_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/factorgraph_test tests/unit/factorgraph_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/clustergraph_test tests/unit/clustergraph_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+tests/unit/clustergraph_test.cpp:17:14: warning: unused variable 'tol' [-Wunused-const-variable]
+const double tol = 1e-8;
+             ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/regiongraph_test tests/unit/regiongraph_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+tests/unit/regiongraph_test.cpp:17:14: warning: unused variable 'tol' [-Wunused-const-variable]
+const double tol = 1e-8;
+             ^
+1 warning generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/daialg_test tests/unit/daialg_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+In file included from tests/unit/daialg_test.cpp:9:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/exactinf.h:32:25: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class ExactInf : public DAIAlgFG {
+                        ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from tests/unit/daialg_test.cpp:9:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/hak.h:36:20: note: in instantiation of template class 'dai::DAIAlg<dai::RegionGraph>'
+      requested here
+class HAK : public DAIAlgRG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from tests/unit/daialg_test.cpp:9:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::CobwebGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/glc.h:158:20: note: in instantiation of template class
+      'dai::DAIAlg<dai::CobwebGraph>' requested here
+class GLC : public DAIAlgCG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+3 warnings generated.
+g++ -Iinclude -I/opt/local/include -Wno-deprecated -Wall -W -Wextra -fPIC -DMACOSX -arch x86_64 -O3 -g -DDAI_DEBUG  -Llib -L/opt/local/lib -DBOOST_TEST_DYN_LINK -o tests/unit/alldai_test tests/unit/alldai_test.cpp -ldai -lgmpxx -lgmp -arch x86_64 -lboost_unit_test_framework
+In file included from tests/unit/alldai_test.cpp:9:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::FactorGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/exactinf.h:32:25: note: in instantiation of template class
+      'dai::DAIAlg<dai::FactorGraph>' requested here
+class ExactInf : public DAIAlgFG {
+                        ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from tests/unit/alldai_test.cpp:9:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::RegionGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/hak.h:36:20: note: in instantiation of template class 'dai::DAIAlg<dai::RegionGraph>'
+      requested here
+class HAK : public DAIAlgRG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+In file included from tests/unit/alldai_test.cpp:9:
+In file included from include/dai/alldai.h:24:
+include/dai/daialg.h:250:14: warning: 'dai::DAIAlg<dai::CobwebGraph>::backupFactors' hides
+      overloaded virtual function [-Woverloaded-virtual]
+        void backupFactors( const VarSet &vs ) { GRM::backupFactors( vs ); }
+             ^
+include/dai/glc.h:158:20: note: in instantiation of template class
+      'dai::DAIAlg<dai::CobwebGraph>' requested here
+class GLC : public DAIAlgCG {
+                   ^
+include/dai/factorgraph.h:282:22: note: hidden overloaded virtual function
+      'dai::FactorGraph::backupFactors' declared here: type mismatch at 1st parameter
+      ('const std::set<size_t> &' vs 'const dai::VarSet &')
+        virtual void backupFactors( const std::set<size_t>& facs );
+                     ^
+3 warnings generated.
+Running unit tests...
+
+tests/unit/var_test
+Running 4 test cases...
+
+*** No errors detected
+tests/unit/smallset_test
+Running 6 test cases...
+
+*** No errors detected
+tests/unit/varset_test
+Running 7 test cases...
+
+*** No errors detected
+tests/unit/graph_test
+Running 6 test cases...
+
+*** No errors detected
+tests/unit/dag_test
+Running 6 test cases...
+
+*** No errors detected
+tests/unit/bipgraph_test
+Running 6 test cases...
+
+*** No errors detected
+tests/unit/weightedgraph_test
+Running 4 test cases...
+
+*** No errors detected
+tests/unit/enum_test
+Running 2 test cases...
+
+*** No errors detected
+tests/unit/util_test
+Running 6 test cases...
+
+*** No errors detected
+tests/unit/exceptions_test
+Running 1 test case...
+
+*** No errors detected
+tests/unit/properties_test
+Running 4 test cases...
+
+*** No errors detected
+tests/unit/index_test
+Running 4 test cases...
+
+*** No errors detected
+tests/unit/prob_test
+Running 10 test cases...
+
+*** No errors detected
+tests/unit/factor_test
+Running 12 test cases...
+
+*** No errors detected
+tests/unit/factorgraph_test
+Running 7 test cases...
+
+*** No errors detected
+tests/unit/clustergraph_test
+Running 5 test cases...
+
+*** No errors detected
+tests/unit/regiongraph_test
+Running 7 test cases...
+
+*** No errors detected
+tests/unit/daialg_test
+Running 2 test cases...
+
+*** No errors detected
+tests/unit/alldai_test
+Running 3 test cases...
+
+*** No errors detected
+
+All unit tests completed successfully!
+
+Starting regression test...this can take a minute or so!
+cd tests && ./testregression && cd ..
+Files /var/tmp/testfast.psGOYM and testfast.out are identical
+Starting EM tests
+cd tests/testem && ./runtests && cd ../..
+Files /var/tmp/testem.EJ8PZG and testem.out are identical
+
+libDAI built successfully!
